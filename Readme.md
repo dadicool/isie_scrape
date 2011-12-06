@@ -11,7 +11,9 @@ Install BeautifulSoup
 ---------------------
 Unpack BeautifulSoup.tar.gz into a directory
 Run inside the BeautifulSoup directory :
+
      python setup.py build
+
      python setup.py install
 
 Run the script
