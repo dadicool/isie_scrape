@@ -67,15 +67,14 @@ def getResult(circonscription, delegation, centre, bureau):
         'button':'+++%D8%A8%D8%AD%D8%AB++',
     }
     encoded_params = urlencode(params)
+  #  print encoded_params
     
     res = urllib2.urlopen(urlResult, encoded_params)
     soup = BeautifulSoup(''.join(res.read()))
-    optTags = soup.findAll('option')[1:]
-    return map(lambda x: {x['value'] : x.contents[0]}, optTags)
-    return res.read()
+    return soup.findAll('table')[4:]
 
-print getCirc()
-print getDelegation('130')
-print getCentre('130', '61')
-print getBureau('130', '61', '091')
-
+#print getCirc()
+#print getDelegation('130')
+#print getCentre('130', '61')
+#print getBureau('130', '61', '091')
+print getResult('111', '52', '001', '01')
