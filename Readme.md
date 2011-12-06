@@ -20,6 +20,7 @@ Run the script
 --------------
 ./isie_scrape.py
 
-Result
+Result 
 ------
-- Election_results.csv
+- HTML corresponding to the election results for the first voting booth
+- Election_results.csv (Future)
