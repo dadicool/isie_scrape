@@ -1,15 +1,26 @@
 Intro
 -----
 
-This is a simple scrip to extract the Tunisian Constitutional Assembly detailed results from the ISIE website
+This is a simple script to extract the Tunisian Constitutional Assembly detailed results from the ISIE website
+There are two versions: Python (deprecated) and Java
+
+Java
+----
+TBD
+
+Python (deprecated)
+-------------------
 
 Pre-requisites
 --------------
 - Python 2.6+
 
+Steps:
+------
+Go into the python
+
 Install BeautifulSoup
 ---------------------
-Unpack BeautifulSoup.tar.gz into a directory
 Run inside the BeautifulSoup directory :
 
      python setup.py build
@@ -18,9 +29,10 @@ Run inside the BeautifulSoup directory :
 
 Run the script
 --------------
-./isie_scrape.py
+python isie_scrape.py
 
 Result 
 ------
 - HTML corresponding to the election results for the first voting booth
 - Election_results.csv (Future)
+
