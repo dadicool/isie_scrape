@@ -19,7 +19,11 @@ public class GetAllMetadata {
 	 */
 	public static void main(String[] args) {
 		try {
-			File folder=new File("D:/tnacData");//TODO make it an argument
+			String dataDir = "D:/tnacData";
+			if (args.length >= 1) {
+				dataDir = args[0];
+			}
+			File folder=new File(dataDir);
 			folder.mkdir();
 			String filePrefix="raw";
 			SortedMap<String, String> mapCirconscription=Scraper.getAllCirconscriptions();
