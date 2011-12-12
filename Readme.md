@@ -8,7 +8,11 @@ The Database choice to host the data and make it available through a REST API is
 
 Java
 ----
-TBD
+- Start Eclipse 
+- Import Existing Project from TnElectionData directory
+- Run target (GetAllMetadata) as "Java Application" - You can specify the path to where the data is going to be dumped by adding the path as the sole argument
+- Run target (GetRawData) as "Java Application" - You can specify the path to where the data is going to be dumped by adding the path as the sole argument
+- Watch the .csv files pile up :)
 
 Database Import
 ---------------
