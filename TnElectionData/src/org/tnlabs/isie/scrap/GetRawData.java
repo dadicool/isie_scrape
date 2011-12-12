@@ -13,7 +13,11 @@ public class GetRawData {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		File folder=new File("D:/tnacData");//TODO make it an argument
+		String dataDir = "D:/tnacData";
+		if (args.length >= 1) {
+			dataDir = args[0];
+		}
+		File folder=new File(dataDir);
 		File[] files = folder.listFiles();
 		for (int i=0;i<files.length;i++){
 			try {
