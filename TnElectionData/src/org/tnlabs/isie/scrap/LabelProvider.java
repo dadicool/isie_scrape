@@ -10,6 +10,8 @@ import java.util.Map;
 import org.apache.commons.io.FileUtils;
 
 public class LabelProvider {
+	static Map<File, Map<String, String>> cache=new HashMap<File, Map<String,String>>();
+	
 	File metadataFolder;
 	public LabelProvider(File metadataFolder){
 		this.metadataFolder=metadataFolder;
@@ -41,21 +43,25 @@ public class LabelProvider {
 	
 	@SuppressWarnings("unchecked")
 	private Map<String, String> loadFile(File file) {
-		Map<String, String> map=new HashMap<String, String>();
-		try {
-			List<String> lines=(List<String>)FileUtils.readLines(file,"UTF-8");
-			Iterator<String> iter=lines.iterator();
-			while (iter.hasNext()){
-				String line=iter.next();
-				String[] parts=line.split(",");
-				map.put(parts[1].trim(),parts[0].trim());
+		Map<String, String> map = cache.get(file);
+		if (map==null){
+			try {
+				map=new HashMap<String, String>();
+				List<String> lines=(List<String>)FileUtils.readLines(file,"UTF-8");
+				Iterator<String> iter=lines.iterator();
+				while (iter.hasNext()){
+					String line=iter.next();
+					String[] parts=line.split(",");
+					map.put(parts[1].trim(),parts[0].trim());
+				}
+				cache.put(file,map);
+				return map;			
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
-			return map;			
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			return null;
 		}
-		return null;
+		return map;
 	}
 
 

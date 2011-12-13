@@ -7,6 +7,11 @@ import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 /**
  * 
  * @author Sami
@@ -169,8 +174,18 @@ public class OfficeRawData {
 		resultat.put("bulletins", bulletins);
 		resultat.put("listes", list);
 		root.put("resultat", resultat);
-		return root.toString();
+		return makePretty(root.toString());
 	}
+	
+	
+	private String makePretty(String uglyJSONString) {
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		JsonParser jp = new JsonParser();
+		JsonElement je = jp.parse(uglyJSONString);
+		String prettyJsonString = gson.toJson(je);
+		return prettyJsonString;
+	}
+	
 	public static class CandidateList {
 		private int id;
 		private String name;

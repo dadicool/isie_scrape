@@ -57,16 +57,26 @@ public class GetRawData {
 					persist(file, rd, c, d, v, nv[1]);
 					success++;
 				} catch (Exception e) {
-					countNoData++;
 					LabelProvider lbp=new LabelProvider(metadataFolder);
-					outputAdd("------NO DATA FROM ISIE FOR---------------");
-					outputAdd(c+"-"+d+"-"+v+"-"+nv[1]);
-					outputAdd(lbp.getCircLabel(c));
-					outputAdd(lbp.getDelLabel(c, d));
-					outputAdd(lbp.getCenterLabel(c, d, v));
-					outputAdd((lbp.getOfficeLabel(c, d, v, nv[1])));
-					outputAdd("------------------------------------------");
-					e.printStackTrace();
+					if (e instanceof NumberFormatException){
+						countNoData++;
+						outputAdd("------NO DATA FROM ISIE FOR---------------");
+						outputAdd(c+"-"+d+"-"+v+"-"+nv[1]);
+						outputAdd(lbp.getCircLabel(c));
+						outputAdd(lbp.getDelLabel(c, d));
+						outputAdd(lbp.getCenterLabel(c, d, v));
+						outputAdd((lbp.getOfficeLabel(c, d, v, nv[1])));
+						outputAdd("------------------------------------------");
+					}
+					else{
+						System.out.println("------NO DATA FROM ISIE FOR---------------");
+						System.out.println(c+"-"+d+"-"+v+"-"+nv[1]);
+						System.out.println(lbp.getCircLabel(c));
+						System.out.println(lbp.getDelLabel(c, d));
+						System.out.println(lbp.getCenterLabel(c, d, v));
+						System.out.println((lbp.getOfficeLabel(c, d, v, nv[1])));
+						System.out.println("------------------------------------------");
+					}
 				}
 			}
 		}
