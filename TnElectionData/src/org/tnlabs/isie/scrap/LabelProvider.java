@@ -14,7 +14,8 @@ public class LabelProvider {
 	public String getCircLabel(String circonscription) {
 		File folder=new File("D:/tnacData");//TODO make it an argument
 		Map<String,String> map=loadFile(new File(folder,"raw.csv"));
-		return map.get(circonscription);
+		String result=map.get(circonscription);
+		return result;
 	}
 
 	@SuppressWarnings("unchecked")
@@ -27,9 +28,8 @@ public class LabelProvider {
 				String line=iter.next();
 				String[] parts=line.split(",");
 				map.put(parts[1].trim(),parts[0].trim());
-				return map;
 			}
-			
+			return map;			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -40,19 +40,22 @@ public class LabelProvider {
 	public String getDelLabel(String circonscription,String delegation) {
 		File folder=new File("D:/tnacData");//TODO make it an argument
 		Map<String,String> map=loadFile(new File(folder,"raw-"+circonscription+".csv"));
-		return map.get(delegation);
+		String result=map.get(delegation);
+		return result;
 	}
 
 	public String getCenterLabel(String circonscription,String delegation,String center) {
 		File folder=new File("D:/tnacData");//TODO make it an argument
 		Map<String,String> map=loadFile(new File(folder,"raw-"+circonscription+"-"+delegation+".csv"));
-		return map.get(center);
+		String result=map.get(center);
+		return result;
 	}
 
 	public String getOfficeLabel(String circonscription,String delegation,String center,String bureau) {
 		File folder=new File("D:/tnacData");//TODO make it an argument
 		Map<String,String> map=loadFile(new File(folder,"raw-"+circonscription+"-"+delegation+"-"+center+".csv"));
-		return map.get(bureau);
+		String result=map.get(bureau);
+		return result;
 	}
 
 }

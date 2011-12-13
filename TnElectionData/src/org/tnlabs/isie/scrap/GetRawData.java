@@ -8,7 +8,10 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 
 public class GetRawData {
-
+	static int countNoData=0;
+	static int success=0;
+	static File file=new File("output.txt");
+	static String outputText="";
 	/**
 	 * @param args
 	 */
@@ -26,6 +29,13 @@ public class GetRawData {
 				e.printStackTrace();
 			}
 		}
+		try {
+			if(!outputText.isEmpty())
+				FileUtils.writeStringToFile(file, outputText, "UTF-8");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		System.out.println("finished with "+success+" scraped bureau and "+countNoData+" where data is missing from site");
 	}
 
 	@SuppressWarnings("unchecked")
@@ -43,13 +53,25 @@ public class GetRawData {
 				try {
 					OfficeRawData rd = Scraper.getData(c, d, v, nv[1]);
 					persist(file, rd, c, d, v, nv[1]);
+					success++;
 				} catch (Exception e) {
-					System.out.println(c+"-"+d+"-"+v+"-"+nv[1]);
+					countNoData++;
+					LabelProvider lbp=new LabelProvider();
+					outputAdd("------NO DATA FROM ISIE FOR---------------");
+					outputAdd(c+"-"+d+"-"+v+"-"+nv[1]);
+					outputAdd(lbp.getCircLabel(c));
+					outputAdd(lbp.getDelLabel(c, d));
+					outputAdd(lbp.getCenterLabel(c, d, v));
+					outputAdd((lbp.getOfficeLabel(c, d, v, nv[1])));
+					outputAdd("------------------------------------------");
 					e.printStackTrace();
 				}
 			}
 		}
-		
+	}
+
+	private static void outputAdd(String string) {
+		outputText+=string+System.getProperty("line.separator");
 	}
 
 	private static void persist(File file, OfficeRawData rd,String c, String d, String v, String office) {
