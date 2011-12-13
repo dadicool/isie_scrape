@@ -11,7 +11,9 @@ public class GetRawData {
 	static int countNoData=0;
 	static int success=0;
 	static File file=new File("output.txt");
+	static File metadataFolder=null;
 	static String outputText="";
+	
 	/**
 	 * @param args
 	 */
@@ -20,8 +22,8 @@ public class GetRawData {
 		if (args.length >= 1) {
 			dataDir = args[0];
 		}
-		File folder=new File(dataDir);
-		File[] files = folder.listFiles();
+		metadataFolder=new File(dataDir);
+		File[] files = metadataFolder.listFiles();
 		for (int i=0;i<files.length;i++){
 			try {
 				handleFile(files[i]);
@@ -56,7 +58,7 @@ public class GetRawData {
 					success++;
 				} catch (Exception e) {
 					countNoData++;
-					LabelProvider lbp=new LabelProvider();
+					LabelProvider lbp=new LabelProvider(metadataFolder);
 					outputAdd("------NO DATA FROM ISIE FOR---------------");
 					outputAdd(c+"-"+d+"-"+v+"-"+nv[1]);
 					outputAdd(lbp.getCircLabel(c));
@@ -80,7 +82,7 @@ public class GetRawData {
 			jsonFolder.mkdirs();
 			String name=file.getName();
 			name=name.substring(0,name.length()-4)+"-"+office+".json";
-			String json = rd.toJson(c, d, v, office,new LabelProvider());
+			String json = rd.toJson(c, d, v, office,new LabelProvider(metadataFolder));
 			FileUtils.writeStringToFile(new File(jsonFolder,name), json,"UTF-8");
 		} catch (Throwable e) {
 			// TODO Auto-generated catch block
