@@ -1,1 +1,311 @@
-{"delegation":{"name":"مارث","code":"60"},"circonscription":{"name":"قابس","code":"510"},"bureau_vote":{"name":"قاعة 1","code":"01"},"centre_vote":{"name":"م إبتدائية تونين","code":"026"},"resultat":{"listes":[{"num":24,"pourcentage":0.25,"vote":1,"name":"قائمة حزب العمال الشيوعي التونسي (البديل الثوري)"},{"num":1,"pourcentage":7.039999961853027,"vote":28,"name":"قائمة العريضة الشعبية للحرية والعدالة والتنمية"},{"num":25,"pourcentage":2.509999990463257,"vote":10,"name":"قائمة حزب المؤتمر من أجل الجمهورية"},{"num":2,"pourcentage":0.25,"vote":1,"name":"قائمة حزب التحالف الوطني للسلم والنماء"},{"num":26,"pourcentage":0.5,"vote":2,"name":"قائمة الضمير"},{"num":3,"pourcentage":0.25,"vote":1,"name":"قائمة التـــوازن"},{"num":27,"pourcentage":33.91999816894531,"vote":135,"name":"قائمة حركة النهضة"},{"num":4,"pourcentage":12.8100004196167,"vote":51,"name":"قائمة الاتحاد الوطني الحر"},{"num":28,"pourcentage":0.5,"vote":2,"name":"قائمة حزب تونس الكرامة"},{"num":5,"pourcentage":0,"vote":0,"name":"\"قائمة الائتــلاف الديمقراطي المستقل \"\"طريق السلامة\"\"\""},{"num":29,"pourcentage":0.5,"vote":2,"name":"قائمة الشموخ"},{"num":6,"pourcentage":1.5099999904632568,"vote":6,"name":"قائمة حزب التكتل"},{"num":30,"pourcentage":0.5,"vote":2,"name":"قائمة حزب العدل والتنمية"},{"num":7,"pourcentage":0.25,"vote":1,"name":"قائمة الاتحاد الديمقراطي الوحدوي"},{"num":31,"pourcentage":0,"vote":0,"name":"قائمة لنبني لأبنائنا"},{"num":8,"pourcentage":0,"vote":0,"name":"قائمة حزب الخضر للتقدم (الخضر)"},{"num":32,"pourcentage":0.25,"vote":1,"name":"قائمة حركة الديمقراطية والتنمية"},{"num":9,"pourcentage":0,"vote":0,"name":"قائمة حركة الديمقراطيين الاشتراكيين"},{"num":33,"pourcentage":3.0199999809265137,"vote":12,"name":"قائمة مناضلون أحرار من أجل الجهات"},{"num":10,"pourcentage":0,"vote":0,"name":"قائمة حزب التحالف من أجل تونس"},{"num":34,"pourcentage":0,"vote":0,"name":"قائمة حزب الإصلاح والتنمية"},{"num":11,"pourcentage":0.5,"vote":2,"name":"قائمة القطب الديمقراطي الحداثي"},{"num":35,"pourcentage":0,"vote":0,"name":"قائمة حزب الليبرالي المغاربي"},{"num":12,"pourcentage":0.25,"vote":1,"name":"قائمة حزب آفاق تونس"},{"num":36,"pourcentage":0.25,"vote":1,"name":"قائمة الاجتهاد للتطوّر والتعاون البشري"},{"num":13,"pourcentage":0.25,"vote":1,"name":"قائمة حزب تونس الخضراء"},{"num":37,"pourcentage":1.5099999904632568,"vote":6,"name":"قائمة الحزب الدستوري الجديد"},{"num":14,"pourcentage":1.0099999904632568,"vote":4,"name":"قائمة اليد الحديدية"},{"num":38,"pourcentage":0.25,"vote":1,"name":"قائمة حركة الشعب"},{"num":15,"pourcentage":5.78000020980835,"vote":23,"name":"قائمة من أجل جبهة وطنية تونسية"},{"num":39,"pourcentage":0.25,"vote":1,"name":"قائمة حركة الشعب الوحدوية التقدمية"},{"num":16,"pourcentage":10.800000190734863,"vote":43,"name":"قائمة الحزب الديمقراطي التقدمي"},{"num":40,"pourcentage":0.5,"vote":2,"name":"قائمة قابس من أجل المواطنة"},{"num":17,"pourcentage":0.25,"vote":1,"name":"قائمة العدالة"},{"num":41,"pourcentage":0.25,"vote":1,"name":"قائمة المستقلون الأحرار"},{"num":18,"pourcentage":0,"vote":0,"name":"قائمة الحرية المسؤولة"},{"num":42,"pourcentage":0.5,"vote":2,"name":"قائمة الجبهة الوطنية التقدمية"},{"num":19,"pourcentage":0.25,"vote":1,"name":"قائمة حزب الوحدة الشعبية"},{"num":43,"pourcentage":0,"vote":0,"name":"قائمة الكرامـــة"},{"num":20,"pourcentage":0,"vote":0,"name":"قائمة الشباب المستقل"},{"num":44,"pourcentage":0.25,"vote":1,"name":"قائمة حزب المبادرة"},{"num":21,"pourcentage":0.25,"vote":1,"name":"قائمة حزب العمل التونسي"},{"num":45,"pourcentage":12.3100004196167,"vote":49,"name":"قائمة الحزب الحر الدستوري الديمقراطي"},{"num":22,"pourcentage":0.25,"vote":1,"name":"قائمة خليج نظيف وتنمية عادلة"},{"num":46,"pourcentage":0.25,"vote":1,"name":"قائمة الورقة الخضراء"},{"num":23,"pourcentage":0,"vote":0,"name":"قائمة الثقة والأمل"}],"bulletins":{"endommage":0,"dans_urne":427,"correct":398,"non_utilise":248,"delivre":675,"blancs":23,"annule":6},"electeurs":{"votant":427,"enregistre":577}}}
+{
+  "delegation": {
+    "name": "مارث",
+    "code": "60"
+  },
+  "circonscription": {
+    "name": "قابس",
+    "code": "510"
+  },
+  "bureau_vote": {
+    "name": "قاعة 1",
+    "code": "01"
+  },
+  "centre_vote": {
+    "name": "م إبتدائية تونين",
+    "code": "026"
+  },
+  "resultat": {
+    "listes": [
+      {
+        "num": 24,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة حزب العمال الشيوعي التونسي (البديل الثوري)"
+      },
+      {
+        "num": 1,
+        "pourcentage": 7.039999961853027,
+        "vote": 28,
+        "name": "قائمة العريضة الشعبية للحرية والعدالة والتنمية"
+      },
+      {
+        "num": 25,
+        "pourcentage": 2.509999990463257,
+        "vote": 10,
+        "name": "قائمة حزب المؤتمر من أجل الجمهورية"
+      },
+      {
+        "num": 2,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة حزب التحالف الوطني للسلم والنماء"
+      },
+      {
+        "num": 26,
+        "pourcentage": 0.5,
+        "vote": 2,
+        "name": "قائمة الضمير"
+      },
+      {
+        "num": 3,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة التـــوازن"
+      },
+      {
+        "num": 27,
+        "pourcentage": 33.91999816894531,
+        "vote": 135,
+        "name": "قائمة حركة النهضة"
+      },
+      {
+        "num": 4,
+        "pourcentage": 12.8100004196167,
+        "vote": 51,
+        "name": "قائمة الاتحاد الوطني الحر"
+      },
+      {
+        "num": 28,
+        "pourcentage": 0.5,
+        "vote": 2,
+        "name": "قائمة حزب تونس الكرامة"
+      },
+      {
+        "num": 5,
+        "pourcentage": 0,
+        "vote": 0,
+        "name": "\"قائمة الائتــلاف الديمقراطي المستقل \"\"طريق السلامة\"\"\""
+      },
+      {
+        "num": 29,
+        "pourcentage": 0.5,
+        "vote": 2,
+        "name": "قائمة الشموخ"
+      },
+      {
+        "num": 6,
+        "pourcentage": 1.5099999904632568,
+        "vote": 6,
+        "name": "قائمة حزب التكتل"
+      },
+      {
+        "num": 30,
+        "pourcentage": 0.5,
+        "vote": 2,
+        "name": "قائمة حزب العدل والتنمية"
+      },
+      {
+        "num": 7,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة الاتحاد الديمقراطي الوحدوي"
+      },
+      {
+        "num": 31,
+        "pourcentage": 0,
+        "vote": 0,
+        "name": "قائمة لنبني لأبنائنا"
+      },
+      {
+        "num": 8,
+        "pourcentage": 0,
+        "vote": 0,
+        "name": "قائمة حزب الخضر للتقدم (الخضر)"
+      },
+      {
+        "num": 32,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة حركة الديمقراطية والتنمية"
+      },
+      {
+        "num": 9,
+        "pourcentage": 0,
+        "vote": 0,
+        "name": "قائمة حركة الديمقراطيين الاشتراكيين"
+      },
+      {
+        "num": 33,
+        "pourcentage": 3.0199999809265137,
+        "vote": 12,
+        "name": "قائمة مناضلون أحرار من أجل الجهات"
+      },
+      {
+        "num": 10,
+        "pourcentage": 0,
+        "vote": 0,
+        "name": "قائمة حزب التحالف من أجل تونس"
+      },
+      {
+        "num": 34,
+        "pourcentage": 0,
+        "vote": 0,
+        "name": "قائمة حزب الإصلاح والتنمية"
+      },
+      {
+        "num": 11,
+        "pourcentage": 0.5,
+        "vote": 2,
+        "name": "قائمة القطب الديمقراطي الحداثي"
+      },
+      {
+        "num": 35,
+        "pourcentage": 0,
+        "vote": 0,
+        "name": "قائمة حزب الليبرالي المغاربي"
+      },
+      {
+        "num": 12,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة حزب آفاق تونس"
+      },
+      {
+        "num": 36,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة الاجتهاد للتطوّر والتعاون البشري"
+      },
+      {
+        "num": 13,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة حزب تونس الخضراء"
+      },
+      {
+        "num": 37,
+        "pourcentage": 1.5099999904632568,
+        "vote": 6,
+        "name": "قائمة الحزب الدستوري الجديد"
+      },
+      {
+        "num": 14,
+        "pourcentage": 1.0099999904632568,
+        "vote": 4,
+        "name": "قائمة اليد الحديدية"
+      },
+      {
+        "num": 38,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة حركة الشعب"
+      },
+      {
+        "num": 15,
+        "pourcentage": 5.78000020980835,
+        "vote": 23,
+        "name": "قائمة من أجل جبهة وطنية تونسية"
+      },
+      {
+        "num": 39,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة حركة الشعب الوحدوية التقدمية"
+      },
+      {
+        "num": 16,
+        "pourcentage": 10.800000190734863,
+        "vote": 43,
+        "name": "قائمة الحزب الديمقراطي التقدمي"
+      },
+      {
+        "num": 40,
+        "pourcentage": 0.5,
+        "vote": 2,
+        "name": "قائمة قابس من أجل المواطنة"
+      },
+      {
+        "num": 17,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة العدالة"
+      },
+      {
+        "num": 41,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة المستقلون الأحرار"
+      },
+      {
+        "num": 18,
+        "pourcentage": 0,
+        "vote": 0,
+        "name": "قائمة الحرية المسؤولة"
+      },
+      {
+        "num": 42,
+        "pourcentage": 0.5,
+        "vote": 2,
+        "name": "قائمة الجبهة الوطنية التقدمية"
+      },
+      {
+        "num": 19,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة حزب الوحدة الشعبية"
+      },
+      {
+        "num": 43,
+        "pourcentage": 0,
+        "vote": 0,
+        "name": "قائمة الكرامـــة"
+      },
+      {
+        "num": 20,
+        "pourcentage": 0,
+        "vote": 0,
+        "name": "قائمة الشباب المستقل"
+      },
+      {
+        "num": 44,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة حزب المبادرة"
+      },
+      {
+        "num": 21,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة حزب العمل التونسي"
+      },
+      {
+        "num": 45,
+        "pourcentage": 12.3100004196167,
+        "vote": 49,
+        "name": "قائمة الحزب الحر الدستوري الديمقراطي"
+      },
+      {
+        "num": 22,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة خليج نظيف وتنمية عادلة"
+      },
+      {
+        "num": 46,
+        "pourcentage": 0.25,
+        "vote": 1,
+        "name": "قائمة الورقة الخضراء"
+      },
+      {
+        "num": 23,
+        "pourcentage": 0,
+        "vote": 0,
+        "name": "قائمة الثقة والأمل"
+      }
+    ],
+    "bulletins": {
+      "endommage": 0,
+      "dans_urne": 427,
+      "correct": 398,
+      "non_utilise": 248,
+      "delivre": 675,
+      "blancs": 23,
+      "annule": 6
+    },
+    "electeurs": {
+      "votant": 427,
+      "enregistre": 577
+    }
+  }
+}
