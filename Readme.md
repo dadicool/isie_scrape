@@ -1,3 +1,5 @@
+# This repo has moved to [OpenGovTN isie_tnac_collection](https://github.com/OpenGovTN/isie_tnac_collection)
+
 Intro
 -----
 
